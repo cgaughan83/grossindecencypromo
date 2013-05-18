@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>GROSS INDECENCY</title>
+  <META name="keywords" lang="en-us" 
+         content="theatre, company, NYC, new york city, new, york, city, basic, project">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META name="author" content="Chris Gaughan">
+  <META name="copyright" content="&copy; The BASiC Theatre Project">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="https://github.com/twitter/bootstrap/blob/master/js/bootstrap-carousel.js"></script>
+  <script src="js/bootstrap.min.js"></script>
     <style>
 
     /* GLOBAL STYLES
@@ -18,62 +23,29 @@
 
     body {
       padding-bottom: 40px;
-      color: #5a5a5a;
-    }
+      
+      background-color: #101010  ;
+      color: white;
 
 
 
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
 
     }
 
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
 
 
 
-    /* CUSTOMIZE THE CAROUSEL
+
+
+    /* Carousel
     -------------------------------------------------- */
 
     /* Carousel base class */
     .carousel {
       margin-bottom: 60px;
+      margin-left: 100px;
+      margin-right: 100px;
+      height:70%;
     }
 
     .carousel .container {
@@ -120,53 +92,58 @@
       margin-top: 10px;
     }
 
+  #logo{
+
+      position: absolute;
+      align:center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      
+      
 
 
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
+  }
 
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+  .message{
+  width:50%
+
+    opacity: .9;
+    font-weight:bold;
+    font-size: 20pt;
+    text-transform:uppercase;
+    line-height:150%;
+    margin-left: 40px;
+    margin-right:90px;
+    position:absolute;
+    padding-bottom: 25px;
 
 
-    /* Featurettes
-    ------------------------- */
+  }
 
-    .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
+  #button-div
+  {
+    padding-top:50px;
 
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
+  }
 
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
+  #top-bar
+  {
+    height:10px;
+    margin-left: 40px;
+    margin-right:90px;
+    background-color: black;
+    position:absolute;
+
+
+  }
+
+
+
+
+
+
+
 
 
 
@@ -189,7 +166,7 @@
       }
       .carousel img {
         width: auto;
-        height: 500px;
+        height: 450px;
       }
 
       .featurette {
@@ -220,10 +197,10 @@
 
       }
       .carousel .item {
-        height: 300px;
+        height: 275px;
       }
       .carousel img {
-        height: 300px;
+        height: 275px;
       }
       .carousel-caption {
         width: 65%;
@@ -250,17 +227,12 @@
         line-height: 1.5;
       }
 
-      .logo { 
-
-      	padding-top: 50px;
-      }
-
     }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
+      <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -275,64 +247,113 @@
 
 
 
+    <div style="background-color:black; align:center"; top=50px; bottom=100px, height=100%>
+      <table height="100%">
+        <td width="60px" valign="top" align="center" >
+         <div class="PageLine2V">&nbsp;</div>
+        </td>
+      </table>
+    </div>
 
 
 
 
     <!-- Carousel
     ================================================== -->
+
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="img/theater1.jpg" alt="">
+          <img src="img/banner1copy.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <p class="lead">Somewhere in here is where the image text would go. This is just hear to give you a feel of what it would look like.</p>
+
 
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="stock2.jpg" alt="">
-          <div class="img/theater2">
+          <img src="img/banner2copy.png" alt="">
+          <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1></h1>
+              <p class="lead"></p>
 
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="stock3.jpg" alt="">
-          <div class="img/theater3">
+          <img src="img/banner3copy.png" alt="">
+          <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
             </div>
           </div>
         </div>
+        <div class="item">
+          <img src="img/banner4copy.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/banner5copy.PNG" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/banner6copy.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+
+            </div>
+          </div>
+        </div>
+
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-    <div class="container">
+
+      <div class="container">
 
 
-      <div class="hero-unit">
-        <p>This is where you would put that quote from Oscar Wilde we were talking about.</p>
-        <p align="right"><i>~ Oscar Wilde</p>
-        <p align="center"><a href="#" class="btn btn-primary btn-large">Buy Tickets &raquo;</a></p>
+      <div class="message" >
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis, velit id dignissim ullamcorper, dolor ipsum iaculis nibh, nec viverra metus turpis elementum nulla. Sed faucibus ipsum eget purus cursus sed ultricies magna cursus. In posuere egestas sapien, eu bibendum nunc vehicula sed. Cras cursus volutpat ultrices. Praesent eu augue."</p>
+        <p align="right">~Oscar Wilde</p>
+        <div class="button-div">
+         <p align="center"><a href="http://www.theatermania.com/new-york-city-theater/shows/gayfest-nyc_199734/tickets/" class="btn btn-inverse btn-large" background-color=grey>Buy Tickets &raquo;</a></p>
+      </div>
+         <div class="logo" align="center">
+            <a href="http://basictheatreproject.com/">
+             <img src= "img/basic-logo-200.png" width="100" height="100">
+             </a>
+    </div>
       </div>
 
-    </div>
-
-    <div class="logo" align="center">
-   		 <img src="img/basic_logo.png">
-	</div>
 
 
- 
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Le javascript
